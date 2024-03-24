@@ -1,0 +1,17 @@
+print("Cuenta de Ahorros 10 % de interes al año")
+
+saldo = int(input("Ingrese el saldo disponible en la cuenta de ahorros: "))
+interes_anual1 = round(saldo * 1.10 - saldo, 3)
+total_saldo1 = round(saldo + interes_anual1, 3)
+interes_anual2 = round(total_saldo1 * 1.10 - total_saldo1, 3)
+total_saldo2 = round(total_saldo1 + interes_anual2, 3)
+interes_anual3 = round(total_saldo2 * 1.10 - total_saldo2, 3)
+total_saldo3 = round(total_saldo2 + interes_anual3, 3)
+
+print(f"La cuenta incio con un saldo de, {saldo}")
+print(f" el primer año el interes fue de: {interes_anual1}" )
+print(f"El saldo final el primer año fue de: {total_saldo1}")
+print(f" el segundo año el interes fue de: {interes_anual2}")
+print(f"El saldo final el segundo año fue de: {total_saldo2}")
+print(f" el tercer año el interes fue de: {interes_anual3}")
+print(f"El saldo final el terer año fue de: {total_saldo3}")
